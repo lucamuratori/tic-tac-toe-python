@@ -74,7 +74,11 @@ while wants_to_play:
 
                     if check_three():
                         winner = True
-                        count = 10
+
+                    elif count > 9:
+                        print("The game was a draw!")
+
+
                 else:
                     print("Choose another cell.")
                     continue
